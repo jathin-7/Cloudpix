@@ -1,0 +1,69 @@
+name: cloudpix
+description: Cloudpix - Multi Google Account Cloud Storage
+publish_to: none
+version: 4.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Google Sign In + Drive API
+  google_sign_in: ^6.2.1
+  googleapis: ^13.1.0
+  googleapis_auth: ^1.5.1
+  http: ^1.1.0
+
+  # Local database (unified gallery)
+  sqflite: ^2.3.2
+  path: ^1.9.0
+
+  # Image handling
+  photo_manager: ^3.0.0
+  cached_network_image: ^3.3.1
+  flutter_image_compress: ^2.1.0
+  image_picker: ^1.0.7
+
+  # Background auto backup (works when app closed)
+  workmanager: ^0.9.0
+
+  # Face recognition (on-device)
+  google_mlkit_face_detection: ^0.9.0
+
+  # Secure folder (PIN + fingerprint)
+  flutter_secure_storage: ^9.0.0
+  local_auth: ^2.1.8
+  crypto: ^3.0.3
+
+  # UI
+  shimmer: ^3.0.0
+  share_plus: ^7.2.2
+  google_fonts: ^6.0.0
+
+  # Utilities
+  path_provider: ^2.1.2
+  intl: ^0.19.0
+  shared_preferences: ^2.2.3
+  permission_handler: ^11.3.0
+  uuid: ^4.3.3
+  connectivity_plus: ^5.0.2
+  flutter_foreground_task: ^9.2.1
+  watcher: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
